@@ -1,0 +1,9 @@
+requests
+allure-behave
+behave
+pyyaml
+assertpy
+paramiko
+pydash
+selenium
+webdriver-manager
