@@ -52,6 +52,9 @@ def before_scenario(context, driver):
         context.driver = webdriver.Chrome(executable_path=ChromeDriverManager(chrome_type=ChromeType.GOOGLE).install(),
                                           options=options)
 
+        context.driver.set_window_size(width=420,height=1180)
+        print(context.driver.get_window_size())
+
     elif browser.lower() == "Firefox":
         context.driver = webdriver.Firefox(executable_path=GeckoDriverManager().install())
 

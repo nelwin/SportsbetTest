@@ -6,9 +6,10 @@ from pages.basePage import BasePage
 class homePage(BasePage):
     # Locators
 
-    FIRST_CARD_NTJ = (By.XPATH,'//div[@data-automation-id="home-tabs-container"]//following-sibling::div[1]/div[2]/div[2]/div/div/following-sibling::div[1]')
-    MARKET_FIRST_NTJ = (By.XPATH,'//*[@id="base"]//div[@data-automation-id="racecard-body"]/div[2]//div[@data-automation-id="racecard-outcome-0-L-price"]')
-    MARKET_SECOND_NTJ = (By.XPATH,'//*[@id="base"]//div[@data-automation-id="racecard-body"]/div[3]//div[@data-automation-id="racecard-outcome-0-L-price"]')
+
+    FIRST_CARD_NTJ = (By.XPATH,'//div[@data-automation-id="group-1-carousel-1-body-container"]//div')
+    MARKET_FIRST_NTJ = (By.XPATH,'//div[@data-automation-id="racecard-body"]//following-sibling::div[1]//following-sibling::div[1]/div[1]')
+    MARKET_SECOND_NTJ = (By.XPATH,'//div[@data-automation-id="racecard-body"]//following-sibling::div[2]//following-sibling::div[1]/div[1]')
 
 
     def __init__(self, driver):

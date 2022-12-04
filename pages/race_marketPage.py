@@ -1,3 +1,5 @@
+import time
+
 from selenium.webdriver.common.by import By
 
 from pages.basePage import BasePage
@@ -29,6 +31,7 @@ class race_marketPage(BasePage):
         print("First bet for fixed market selected")
 
     def click_second_market_NTJ(self):
+
         super().wait_for_element_to_be_visible(race_marketPage.MARKET_SECOND_NTJ)
 
         element = self.find_element(*race_marketPage.MARKET_SECOND_NTJ)

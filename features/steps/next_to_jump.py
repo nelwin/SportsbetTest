@@ -18,15 +18,15 @@ def step_impl(context):
     print("----------Click on first card under next to jump carousel-------")
     context.fp = homePage(context.driver)
     context.fp.click_first_card_NTJ()
-    # context.fp.click_first_market_NTJ()
-    # context.fp.click_second_market_NTJ()
 
 
 @step("I add 2 different bets into the Bet Slip by clicking on market button for a particular horse")
 def step_impl(context):
     print("----------Select 2 different bets for a fixed market-------")
     context.rp = race_marketPage(context.driver)
+    context.bs = betSlipPage(context.driver)
     context.rp.click_first_market_NTJ()
+    context.bs.hide_betslip()
     context.rp.click_second_market_NTJ()
 
 
@@ -34,4 +34,5 @@ def step_impl(context):
 def step_impl(context):
     print("----------Select 2 different bets for a fixed market-------")
     context.bs = betSlipPage(context.driver)
+    context.bs.click_betslip_btn()
     context.bs.confirm_betslip()
