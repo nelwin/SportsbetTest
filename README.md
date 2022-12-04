@@ -25,10 +25,14 @@ Install python
 2. generate the report - allure serve test/allure-results
 
 ## Assessment details
-1. Any assumption made - Python3 is installed and Pycharm IDE is installed
-2. Problems encountered and how you might fix it given more time - So far no problems occurred but I may optimise the locators to make the code less flaky. Also I will add tags to the tests so that can run them individually 
-3. Problems you may encounter as the suite grows - As the suite grows the tests become flaky. Need to break the pages into smaller components to resuse the components on different pages. I will add more suitable waits. I will add more assert statements. I will add the screenshot feature so that the report captures them on pass and fail.
-4. Any improvement areas to make it easier for adoption by other team members / easier to implement future tests - I will create base libraries or base framework suite which can be used throughout different teams. Hence, at organisational level different teams will be working on same base framework with different features. 
+1. Any assumption made - 
+   Python3 is installed and Pycharm IDE is installed
+2. Problems encountered and how you might fix it given more time - 
+   So far no problems occurred but I may optimise the locators to make the code less flaky. 
+3. Problems you may encounter as the suite grows - 
+   As the suite grows the tests become flaky. Need to break the pages into smaller components to resuse the components on different pages. I will add more suitable waits. I will add more assert statements. I will add the screenshot feature so that the report captures them on pass and fail.Also as the suite grows the number of tests grow so will add the parallel run feature.
+4. Any improvement areas to make it easier for adoption by other team members / easier to implement future tests - 
+   I will create base libraries or base framework suite which can be used throughout different teams. Hence, at organisational level different teams will be working on same base framework with different features. 
 
 Screenshots of report:
 ![img.png](img.png)
